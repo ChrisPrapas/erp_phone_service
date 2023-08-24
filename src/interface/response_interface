@@ -1,3 +1,5 @@
+import { Phone } from './phone_interface';
+import { Customer } from './customer_interface';
 
 export interface Response {
 
@@ -6,5 +8,5 @@ export interface Response {
     reason:string;
     message:string;
     DeveloperMessage:string;
-    data: {customers?: Customer[]};
+    data: {customers?: Customer[], customer?: Customer, phones ?: Phone[], phone ?: Phone};
 }
