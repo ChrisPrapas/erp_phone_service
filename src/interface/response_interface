@@ -2,7 +2,6 @@ import { Phone } from './phone_interface';
 import { Customer } from './customer_interface';
 
 export interface Response {
-
     timestamp:Date;
     statusCode: number;
     reason:string;
