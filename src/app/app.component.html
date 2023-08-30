@@ -7,34 +7,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <script defer src="assets/js/main.js"></script>
-  <link rel="stylesheet" href="assets/css/styles.css">
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  
   <!-- Bootstrap CSS v5.2.1 -->
 </head>
 
-  <body id="corpo-site">
-    <header class="menu-superior" id="menu-superior">
+  <body [class.body-pd]="classApplied" id="corpo-site">
+    <header [class.body-pd]="classApplied" class="menu-superior" id="menu-superior">
         <div class="btn-menu">
-            <i class='bx bx-menu' id="btn-menu"></i>
+            <i (click)="toggleMenu()" [class.bx-x]="classApplied" class='bx bx-menu' id="btn-menu"></i>
         </div>
 
         <div></div>
             <i class="bx bxs-bell icone"></i>
     </header>
 
-    <div class="menu-lateral" id="menu-lateral">
+    <div [class.show]="classApplied" class="menu-lateral" id="menu-lateral">
         <nav class="nav">
             <div>
                 <a href="#" class="menu-logo">
-                    <img src="assets/img/logo.png" class="menu-logo-img">
+                    <img src="../assets/something.png" alt="" class="menu-logo-img">
                     <span class="menu-logo-nome">Alvotec Igrejas</span>
                 </a>
 
                 <div>
-                    <a href="#" class="nav-lista ativo">
+                    <a href="#" (click)="toggleColor(this)"  class="nav-lista ativo">
                         <i class='bx bx-home nav-icone' ></i>
                         <span>Pagina Inicial</span>
                     </a>
@@ -64,7 +61,7 @@
                         <span>Financeiro</span>
                     </a>
 
-                    <a href="#" class="nav-lista">
+                    <a href="#"  class="nav-lista">
                         <i class='bx bx-receipt nav-icone' ></i>
                         <span>NF</span>
                     </a>
@@ -85,5 +82,4 @@
     <!-- place footer here -->
     
   </footer>
-  
 </body>

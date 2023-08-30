@@ -25,12 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-              "node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.rtl.min.css",
+              "src/app/assets/css/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/app/assets/js/main1.js"
             ]
           },
           "configurations": {
@@ -88,12 +90,16 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/assets"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              
+            ]
           }
         }
       }
