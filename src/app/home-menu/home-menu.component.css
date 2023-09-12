@@ -1,3 +1,22 @@
+body{
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+
+.padding_body_left{
+  padding-left: var(--nav-width);
+}
+
+@media screen and (min-width: 768px){
+  .padding_body_left{
+    padding-left: calc(var(--nav-width) + 90px);
+  }
+}
+
 .registration-form{
     padding: 50px 0;
     margin-right: 5%;
@@ -106,7 +125,7 @@
   .list-div{
     position: absolute;
     margin-right: 7%;
-    width: 100%;
+    width: 30%;
     height: 100%;
     border-left-style: solid;
     border-color: #9fadca;
@@ -123,5 +142,5 @@
   }
 
   .icon_fm{
-    vertical-align: sub;
+    vertical-align: text-bottom;
   }
