@@ -19,9 +19,9 @@ export class AppComponent implements OnInit {
   constructor(private customerService: ServerService) {}
   ngOnInit(): void {
     var array = Array.prototype.slice.call(document.querySelectorAll(".nav-lista"));
-    array.forEach(function(el) {
+    array.forEach((el) => {
       // Callbacks are passed a reference to the event object that triggered the handler
-      el.addEventListener("click", function(this: any) {
+      el.addEventListener("click", function(this: HTMLElement) {
           // The this keyword will refer to the element that was clicked
           if(array) {
             array.forEach(l => l.classList.remove('ativo'));

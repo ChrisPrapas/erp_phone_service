@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 /*===== GOOGLE FONTS =====*/
 
@@ -21,23 +20,6 @@
   --z-fixed: 100;
 }
 
-/*===== Base de tudo =====*/
-*,::before,::after{
-  box-sizing: border-box;
-}
-
-body{
-  position: relative;
-  margin: var(--header-height) 0 0 0;
-  padding: 0 1rem;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  transition: .5s;
-}
-
-a{
-  text-decoration: none;
-}
 
 /*===== Menu Superior =====*/
 .menu-superior{
@@ -152,7 +134,7 @@ a{
 @media screen and (min-width: 768px){
   body{
     margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding-left: calc(var(--nav-width) + 2rem);
+    padding-left: var(--nav-width);
   }
 
   .menu-superior{
@@ -175,6 +157,6 @@ a{
     padding-left: calc(var(--nav-width) + 188px);
   }
 }
-
+@import "~bootstrap/dist/css/bootstrap.css"
 
 
